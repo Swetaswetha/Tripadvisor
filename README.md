@@ -13,7 +13,10 @@ Static content with a clean and organized look
 
 # Technologies Used:
 HTML
+
 CSS
 
 # Purpose:
 This project was created for learning and practice. It helped me improve my skills in layout design, CSS styling, and responsive web design.
+
+# Website link :[]
