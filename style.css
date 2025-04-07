@@ -1,0 +1,820 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1450px;
+    margin: 0 auto;
+
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+        font-size: 14px;
+        margin-left: -80px;
+        margin-right: -35px;
+        margin-top: 5px;
+        padding-left: 120px;
+        padding-right: 80px;
+
+    }
+
+    .navbar__s1 {
+        cursor: pointer;
+    }
+
+    .navbar__s1--img {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar__s1--title {
+        position: relative;
+        left: -10px;
+
+    }
+
+    .navbar__s1--logo {
+        width: 35px;
+        margin: 15px;
+    }
+
+    .navbar__s2 {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+
+    }
+
+    .navbar__s2 h4:hover {
+        background-color: #F2F2F2;
+        border-radius: 50px;
+
+    }
+
+    .navbar__s2--1 {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .navbar__s2--2 {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .navbar__s2--3 {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .navbar__s2--4 {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .navbar__s3 {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .navbar__s3--desc {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .navbar__s3--desc:hover {
+        width: fit-content;
+        height: fit-content;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .navbar__s3--button {
+        background-color: black;
+        color: white;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 50px;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .navbar__s3__button:hover {
+        opacity: 80%;
+    }
+
+
+    .title--topic {
+        font-size: 50px;
+        margin-top: 30px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+
+    .categories {
+        display: flex;
+        cursor: pointer;
+        gap: 20px;
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        font-size: large;
+        position: relative;
+
+    }
+
+    .categories p:hover {
+        border-bottom: solid black 2px;
+    }
+
+    .searchbar {
+        justify-content: center;
+        font-size: larger;
+    }
+
+    .searchbar__box {
+        border-radius: 50px;
+        width: 50%;
+        margin-left: 25%;
+        padding: 8px;
+        display: flex;
+        gap: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24)2px 3px 8px;
+        align-items: center;
+
+    }
+
+    .searchbar input {
+        border: transparent;
+        width: 100%;
+        font-size: medium;
+    }
+
+    .searchbar input:hover {
+        border: transparent;
+    }
+
+    .searchbar__button {
+        padding: 10px;
+        background-color: #34E0A1;
+        border: none;
+        border-radius: 50px;
+        width: 100px;
+        height: 40px;
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    .searchbar i:hover {
+        cursor: pointer;
+    }
+
+    .searchbar__button:hover {
+        cursor: pointer;
+        background-color: #84E9BD;
+
+    }
+
+
+    .poster img {
+        max-width: 1450px;
+        margin-top: 20px;
+        height: 500px;
+        padding-left: 10px;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+
+    }
+
+    .poster {
+        padding-left: 100px;
+        padding-right: 250px;
+    }
+
+    .poster__lines {
+        position: absolute;
+        bottom: 200px;
+        left: 250px;
+        width: 450px;
+        height: 150px;
+        color: white;
+
+    }
+
+    .poster__desc {
+        display: inline;
+        font-size: small;
+
+    }
+
+    .poster__desc--button {
+        display: inline-block;
+        font-size: small;
+        width: fit-content;
+        height: fit-content;
+
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+
+    }
+
+    .poster__heading1 {
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+    .poster__desc--bottom {
+        color: black;
+        width: fit-content;
+        height: fit-content;
+        font-size: small;
+        background-color: white;
+        border-radius: 30px;
+        align-items: center;
+
+
+    }
+
+    .poster__desc--bottom svg {
+        width: 30px;
+        height: 25px;
+
+    }
+
+    .explore__container {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .explore {
+        display: flex;
+        background-color: #F2ECF9;
+        width: fit-content;
+        height: fit-content;
+        justify-content: space-between;
+    }
+
+    .explore__image img {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .explore__content {
+        padding: 10px;
+    }
+
+    .explore__btn {
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .explore__btn:hover {
+        color: black;
+        font-weight: bolder;
+        cursor: pointer;
+        background-color: solid black 1px;
+    }
+
+    .explore__content p,
+    h3 {
+        margin: 10px;
+    }
+
+
+    .seaside {
+        margin-top: 50px;
+        margin-left: 60px;
+        padding-right: 180px;
+        padding-left: 100px;
+    }
+
+    .seaside__heading {
+        padding: 10px;
+        text-align: start;
+
+    }
+
+    .seaside__container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .seaside__cards {
+        flex-grow: 1;
+        margin: 5px;
+        flex-basis: 20%;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .seaside__img--heading {
+        position: absolute;
+        bottom: 30px;
+        left: 0px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        padding-right: 250px;
+        border-radius: 5px;
+    }
+
+    .seaside__cards img {
+        width: 100%;
+        height: 90%;
+        border-radius: 5px;
+
+    }
+
+    .seaside__cards:hover {
+        cursor: pointer;
+        transform: scale(1);
+    }
+
+    .experiences {
+        padding-right: 170px;
+        padding-left: 150px;
+    }
+
+    .experiences__container {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .experiences__heading {
+        padding: 10px;
+        text-align: start;
+
+    }
+
+    .experiences__cards {
+        flex-grow: 1;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    .experiences__cards img {
+        width: 260px;
+        height: 70%;
+        border-radius: 5px;
+    }
+
+    .experiences__cards img:hover {
+        cursor: pointer;
+    }
+
+    .exploremore__section1 {
+        padding: 20px;
+        padding-right: 192px;
+        padding-left: 200px;
+        background-color: #F2F1EC;
+        margin-top: 20px;
+        margin-left: -60px;
+        margin-right: -35px;
+    }
+
+    .exploremore__heading {
+        padding-left: 20px;
+    }
+
+    .exploremore__section2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .exploremore__cards {
+        flex-grow: 1;
+        padding: 20px;
+        margin: 0px;
+        flex-basis: 30%;
+    }
+
+    .exploremore__cards img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .exploremore__cards img:hover {
+        cursor: pointer;
+    }
+
+    .dreamtrip {
+        margin-top: 40px;
+        padding: 10px;
+        padding-right: 140px;
+        padding-left: 150px;
+    }
+
+    .dreamtrip__heading {
+        padding-left: 10px;
+    }
+
+    .dreamtrip__container {
+        margin: 10px;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 5px;
+
+
+    }
+
+    .dreamtrip__cards {
+        flex-grow: 1;
+        flex-basis: 20%;
+        position: relative;
+
+    }
+
+    .dreamtrip__img--heading1,
+    .dreamtrip__img--heading2,
+    .dreamtrip__img--heading3,
+    .dreamtrip__img--heading4 {
+        position: absolute;
+        bottom: 5px;
+        color: white;
+        font-size: larger;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+
+
+    }
+
+    .dreamtrip__img--heading1 {
+        padding-right: 94px;
+        border-radius: 5px;
+    }
+
+    .dreamtrip__img--heading2 {
+        padding-right: 20px;
+        border-radius: 5px;
+    }
+
+    .dreamtrip__img--heading3 {
+        padding-right: 146px;
+        border-radius: 5px;
+
+    }
+
+    .dreamtrip__img--heading4 {
+        padding-right: 110px;
+        border-radius: 5px;
+    }
+
+    .dreamtrip__cards img {
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+
+    }
+
+    .dreamtrip__cards img:hover {
+        cursor: pointer;
+    }
+
+    .destination {
+        margin-top: 40px;
+        padding: 10px;
+
+    }
+
+    .destination__head {
+        padding-left: 145px;
+    }
+
+    .destination__container {
+        margin: 10px;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 145px;
+        padding-left: 120px;
+
+    }
+
+    .destination__img--heading {
+        position: absolute;
+        bottom: 100px;
+        left: 10px;
+        color: white;
+        font-size: xx-large;
+
+    }
+
+    .destination__cards {
+        flex-grow: 1;
+        text-align: center;
+        position: relative;
+    }
+
+    .destination__cards img {
+        width: 250px;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .destination__cards img:hover {
+
+        cursor: pointer;
+    }
+
+
+    .ad__container {
+        display: flex;
+        background-color: #F2ECF9;
+        padding: 15px;
+        justify-content: space-around;
+        margin-right: 180px;
+        margin-left: 160px;
+    }
+
+    .ad__image {
+        padding: 10px;
+    }
+
+    .ad__image img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .ad__content {
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ad__content1 {
+        padding: 10px;
+        height: 250px;
+    }
+
+    .ad__logo {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .ad__logo img {
+        width: 30px;
+        border-radius: 20px;
+    }
+
+    .ad__btn {
+        padding: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        border: transparent;
+    }
+
+    .ad__btn:hover {
+        background-color: lightslategrey;
+        color: black;
+        cursor: pointer;
+    }
+
+    .ad__logo u:hover {
+        color: gray;
+        cursor: pointer;
+    }
+
+    .award {
+        display: flex;
+        background-color: #FFF7E1;
+        margin: 60px;
+        justify-content: space-around;
+        margin-left: -60px;
+        margin-right: -35px;
+        padding-left: 230px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+
+    }
+
+    .award__container {
+        padding: 15px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .award__container h2 {
+        font-weight: 800;
+        font-size: 40px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+
+    }
+
+    .award__container p {
+        font-size: x-large;
+    }
+
+    .award__content {
+        padding: 10px;
+        height: 389px;
+
+    }
+
+    .award__btn {
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        margin-top: 20px;
+        border: transparent;
+        font-size: medium;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .award__btn:hover {
+        background-color: #333333;
+        color: white;
+        cursor: pointer;
+    }
+
+    .award__content img {
+        width: 80px;
+        height: 85px;
+    }
+
+    .award__image {
+        height: fit-content;
+
+    }
+
+
+    .footer {
+        margin-left: -35px;
+        margin-right: -32px;
+        padding-bottom: 50px;
+        background-color: #f2f2f2;;
+     
+     }
+     
+     .footer__card {
+        position: relative;
+        display: flex;
+        margin-left: 180px;
+        gap: 50px;
+        font-size: small;  
+     }
+     
+     .footer__card h5{
+        padding-top: 30px;
+        font-size: medium;
+        font-weight: lighter;
+     }
+     
+     .footer__card p {
+        padding: 3px;
+     }
+     .footer__logo--section{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 170px;
+        width: 750px;
+        height: 50px;
+        
+     }
+     
+     .footer__card--trip{
+        padding-left: 210px;
+     }
+     
+     .footer__logo {
+        display: flex;
+        position: relative;
+        width: 350px;
+     }
+     
+     .footer__logo p {
+        display: flex;
+        font-size: x-small;
+        padding: 5px;
+        
+     }
+     
+     .footer__select {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+        
+     }
+     
+     .footer__link {
+        position: absolute;
+        left: 220px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 10px;
+        width: 700px;
+        font-size: 15px;
+     }
+     
+     .footer__first {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-end;
+        margin-right: 200px;
+        margin-top: -40px;
+        margin-bottom: 50px;
+     }
+     
+     .footer__country select {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 10px;
+        text-align: start;
+        color: black;
+        font-weight: bold;
+        width: 160px;
+     }
+     
+     
+     .footer__country select:hover {
+        color: grey;
+        cursor: pointer;
+     }
+     
+     .footer__socialmedia {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        font-size: x-large;
+        margin-right: 200px;
+        margin-top: -40px;
+        margin-bottom: 30px;
+     }
+     
+     .footer__socialmedia i:hover {
+        color: grey;
+        cursor: pointer;
+     }
+     
+     .footer__content {
+        font-size: 12px;
+        margin-top: -90px;
+        width: 750px;
+        padding-left: 190px;
+        margin-bottom: 30px;
+     
+     }
+     
+     .footer__card p:hover {
+        color: grey;
+        text-decoration: underline;
+        cursor: pointer;
+     }
+     
+     .footer__link a:hover {
+        color: grey;
+     }
+    }
